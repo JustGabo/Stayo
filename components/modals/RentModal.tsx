@@ -129,7 +129,7 @@ const RentModal = () => {
   }, [step]);
 
   let bodyContent = (
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col gap-6">
       <Heading
         title="Which of these best describes your place?"
         subtitle="Pick a category"
@@ -208,7 +208,7 @@ const RentModal = () => {
 
   if (step === STEPS.IMAGES) {
     bodyContent = (
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-6">
         <Heading
           title="Add a photo of your place"
           subtitle="Show guests what your place looks like!"
@@ -251,7 +251,7 @@ const RentModal = () => {
 
   if (step === STEPS.PRICE) {
     bodyContent = (
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-6">
         <Heading
           title="Now, set your price"
           subtitle="How much do you charge per night?"

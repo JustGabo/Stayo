@@ -119,6 +119,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
         "
       >
         <div className="flex flex-col gap-6">
+          <div className="h-[90dvh]">
           <ListingHead
             title={listing.title}
             imageSrc={listing.imageSrc}
@@ -126,6 +127,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
             id={listing.id}
             currentUser={currentUser}
           />
+          </div>
           <div 
             className="
               grid 

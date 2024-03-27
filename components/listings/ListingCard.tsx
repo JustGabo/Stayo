@@ -14,7 +14,6 @@ import {
 
 import HeartButton from "../HeartButton";
 import Button from "../Button";
-import ClientOnly from "../ClientOnly";
 
 interface ListingCardProps {
   data: SafeListing;
@@ -111,11 +110,11 @@ const ListingCard: React.FC<ListingCardProps> = ({
         <div className="font-semibold  line-clamp-1">
           {location?.region}, {location?.label}
         </div>
-        <div className="font-light text-sm text-neutral-500">
+        <div className="font-light text-xs text-neutral-500">
           {reservationDate || data.category}
         </div>
         <div className="flex flex-row  items-center gap-1">
-          <div className="font-semibold">
+          <div className="font-semibold text-sm">
             $ {price}
           </div>
           {!reservation && (

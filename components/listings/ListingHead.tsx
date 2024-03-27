@@ -28,8 +28,8 @@ const ListingHead: React.FC<ListingHeadProps> = ({
   const location = getByValue(locationValue);
 
   return (
-    <section className="mt-3 flex flex-col gap-3">
-      <div>
+    <section className=" flex flex-col gap-3 h-full">
+      <div className="mb-2">
         <Heading
           title={title}
           subtitle={`${location?.region}, ${location?.label}`}
@@ -38,7 +38,8 @@ const ListingHead: React.FC<ListingHeadProps> = ({
       <div
         className="
           w-full
-          h-[70vh]
+          h-[50dvh]
+          lg:h-full
           overflow-hidden 
           rounded-xl
           relative
